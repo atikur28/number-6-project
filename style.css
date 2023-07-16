@@ -70,8 +70,52 @@ nav li a{
     margin: 80px auto;
     text-align: center;
 }
+/* Main Section */
+main{
+    width: 1440px;
+    margin: 0px auto;
+}
+/* Feature Section */
+.feature-container{
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+}
+.team-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    margin: 80px 0px;
+}
+.feature-title{
+    color: #131313;
+    font-size: 2.8rem;
+    font-weight: 700;
+    width: 468px;
+}
+.first-title{
+    color: #727272;
+    font-size: 2.8rem;
+    font-weight: 500;
+}
+.second-title{
+    color: #FF900E;
+    font-size: 2.8rem;
+    font-weight: 700;
+}
+.feature-description{
+    width: 537px;
+    color: #727272;
+    font-size: 1rem;
+    font-weight: 400;
+    margin: 25px 0px;
+}
+
+
+
 /* Mobile Responsive */
 @media screen and (max-width:576px) {
+    /* banner section */
     header{
         padding: 30px;
     }
@@ -82,6 +126,33 @@ nav li a{
     nav ul{
         padding-left: 1rem;
     } 
+    .banner-description{
+        width: 70%;
+        margin: 0px auto;
+    }
+    /* feature section */
+    main{
+        width: 0px;
+    }
+    .feature-container{
+        flex-direction: column;
+    }
+    .team-container{
+        grid-template-columns: 1fr;
+    }
+    .feature-content{
+        flex-direction: column;
+    }
+    .feature-title{
+        padding-left: 4rem;
+    }
+    .feature-description{
+        width: 70%;
+        margin: 0px 0px 2px 70px ;
+    }
+    .feature-btn{
+        margin: 10px 0px 0px 70px;
+    }
 }
 /* Medium Responsive */
 @media screen and (min-width:577px) and (max-width:992px) {
@@ -95,6 +166,10 @@ nav li a{
     nav ul{
         padding-left: 1rem;
     } 
+    .banner-description{
+        width: 70%;
+        margin: 0px auto;
+    }
 }
 /* Large Responsive */
 @media screen and (min-width:993px) and (max-width:1200px) {
