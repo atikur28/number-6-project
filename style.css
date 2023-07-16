@@ -110,6 +110,106 @@ main{
     font-weight: 400;
     margin: 25px 0px;
 }
+/* Feature */
+.fact-title{
+    color: #131313;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-top: 100px;
+}
+.fact-description{
+    color: #727272;
+    font-size: 1rem;
+    font-weight: 400;
+    width: 542px;
+    margin: 20px 0px;
+}
+.benefit-title{
+    color: #131313;
+    font-size: 2.5rem;
+    font-weight: 700;
+    border-left: 4px solid #FF900E;
+    padding-left: 1.2rem;
+}
+.benefit-description{
+    color: #727272;
+    width: 586px;
+    font-size: 1rem;
+    font-weight: 400;
+    margin: 25px 0px;
+}
+.card-title{
+    color: #131313;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+.card-description{
+    color: #727272;
+    width: 514px;
+    font-size: 1rem;
+    font-weight: 400;
+}
+.benefit-card{
+    padding: 25px 0px 25px 10px;
+    padding-left: 1rem;
+    margin-bottom: 1.2rem;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+}
+.feature-benefits-container{
+    display: flex;
+    align-items: center;
+    margin: 60px 0px;
+    gap: 140px;
+}
+.badge{
+    border-radius: 8px;
+    background-color: #FF900E;
+    color: #FFF;
+    width: 300px;
+    text-align: center;
+    padding: 50px 35px;
+    position: relative;
+    bottom: 110px;
+    right: 70px;
+}
+.badge-title{
+    font-size: 3rem;
+    font-weight: 700;
+    margin: 0px;
+}
+.badge-description{
+    font-size: 1.4rem;
+    font-weight: 500;
+    margin: 0px;
+}
+
+
+/* Facts */
+.box-title{
+    color: #424242;
+    font-size: 2.8rem;
+    font-weight: 600;
+}
+.box-description{
+    color: #727272;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+.box-container{
+    text-align: center;
+    padding: 40px 30px;
+    border: 1px solid #FF900E;
+    border-radius: 8px;
+    width: 180px;
+    height: 150px;
+}
+.fact-box-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 100px 0px;
+}
+
 
 
 
@@ -136,6 +236,7 @@ main{
     }
     .feature-container{
         flex-direction: column;
+        margin-bottom: 30px;
     }
     .team-container{
         grid-template-columns: 1fr;
@@ -148,11 +249,53 @@ main{
     }
     .feature-description{
         width: 70%;
-        margin: 0px 0px 2px 70px ;
+        margin: 0px 0px 0px 70px ;
     }
     .feature-btn{
         margin: 10px 0px 0px 70px;
     }
+    /* Feature */
+    .feature-benefits-container{
+        flex-direction: column;
+    }
+    .benefit-content{
+        margin-left: 70px;
+    }
+    .benefit-title{
+        width: 350px;
+    }
+    .benefit-description{
+        width: 400px;
+    }
+    .benefit-card{
+        margin-right: 40px;
+    }
+    .card-description{
+        width: 400px;
+    }
+    .benefit-img{
+        width: 100%;
+    }
+    .badge{
+        width: 80%;
+    }
+    /* Facts Section */
+    .fact-info{
+        margin-left: -195px;
+    }
+    .fact-title{
+        display:flex;
+    }
+    .fact-description{
+        width: 350px;
+    }
+    .fact-box-container{
+        flex-direction: column;
+    }
+    .box-container{
+        margin-top: 1rem;
+    }
+
 }
 /* Medium Responsive */
 @media screen and (min-width:577px) and (max-width:992px) {
@@ -170,6 +313,28 @@ main{
         width: 70%;
         margin: 0px auto;
     }
+    /* feature section */
+    main{
+        width: 0px;
+    }
+    .feature-container{
+        flex-direction: column;
+        margin-bottom: 30px;
+    }
+    .team-container{
+        grid-template-columns: 1fr;
+    }
+    /* Fact Section */
+    .fact-info{
+        margin-left: -270px;
+    }
+    .fact-box-container{
+        flex-direction: column;
+    }
+    .box-container{
+        margin-top: 1rem;
+    }
+
 }
 /* Large Responsive */
 @media screen and (min-width:993px) and (max-width:1200px) {
@@ -181,5 +346,25 @@ main{
     } 
     nav ul{
         padding-left: 1rem;
+    }
+    /* feature section */
+    main{
+        width: 0px;
+    }
+    .feature-container{
+        flex-direction: column;
+        margin-bottom: 30px;
+    }
+    .team-container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    /* Fact Section */
+    .fact-info{
+        margin-left: -270px;
+    }
+    .fact-box-container{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
     }
 }
